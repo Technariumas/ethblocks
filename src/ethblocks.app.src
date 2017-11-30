@@ -1,0 +1,17 @@
+{application, ethblocks,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  lager,
+                  gun,
+                  jiffy
+                 ]},
+  {mod, { ethblocks_app, []}},
+  {env, [{wsaddr,"192.168.0.1"}, % IP address of RPC Webserver (AFAIK ONLY geth supports async subscribtions) 
+         {wsport,8080}, % RPC port
+         {wspath,"/websocket"}]} % Websocket endpoint 
+ ]}.

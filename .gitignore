@@ -1,10 +1,15 @@
 .eunit
 deps
+deb
 *.o
 *.beam
 *.plt
 erl_crash.dump
-ebin/*.beam
-rel/example_project
+ebin
+rel/ethblocks
 .concrete/DEV_MODE
 .rebar
+ttb_last_config
+log
+.deb
+
